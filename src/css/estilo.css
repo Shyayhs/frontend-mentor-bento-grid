@@ -1,0 +1,92 @@
+body {
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    color: var(--preto);
+    background-color: var(--cinza);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 50px 50px 10px;
+    gap: 40px;
+    /* - Weights: 400, 500 */
+    /* > Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens. */
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid:
+    "aside-1 section-1 section-1 aside-2" 200px
+    "aside-1 div-1 div-2 aside-2" 120px
+    "aside-1 div-3 section-2 section-2" 120px
+    / 180px 180px 180px 180px;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 100px;
+    background-color: var(--cinza-claro);
+    box-shadow: 0 7px 8px 3px var(--cinza-escuro);
+}
+
+.cartao {
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+#aside-1 {
+    grid-area: 'aside-1';
+}
+
+#aside-2 {
+    grid-area: 'aside-2';
+}
+
+#section-1 {
+    grid-area: 'section-1';
+}
+
+#section-2 {
+    grid-area: 'section-2';
+}
+
+#div-1 {
+    grid-area: 'div-1';
+}
+
+#div-2 {
+    grid-area: 'div-2';
+}
+
+#div-3 {
+    grid-area: 'div-3';
+}
+
+.bege {
+    background-color: var(--bege);
+}
+
+.roxo {
+    background-color: var(--roxo);
+}
+
+.cinza {
+    background-color: var(--cinza);
+}
+
+.amarelo {
+    background-color: var(--amarelo);
+}
+
+.branco {
+    background-color: var(--branco);
+}
+
+.atribuicao {
+    font-size: 11px;
+    text-align: center;
+}
+
+.atribuicao a {
+    color: var(--cor-link);
+}
