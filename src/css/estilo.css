@@ -1,65 +1,112 @@
+@font-face {
+    font-family: 'Dm Sans';
+    src:
+    url(../../assets/fonts/static/DMSans-Medium.ttf),
+    url(../../assets/fonts/static/DMSans-MediumItalic.ttf),
+    url(../../assets/fonts/static/DMSans-Regular.ttf),
+    url(../../assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf),
+    url(../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
 body {
-    font-size: 18px;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: -2px;
     font-family: "DM Sans", sans-serif;
+    font-weight: 500;
     color: var(--preto);
     background-color: var(--cinza);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    padding: 50px 50px 10px;
-    gap: 40px;
+    padding: 10px 50px 0px;
     /* - Weights: 400, 500 */
     /* > Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens. */
 }
 
 .container {
-    height: 100%;
     display: grid;
     grid:
     "aside-1 section-1 section-1 aside-2" 200px
-    "aside-1 div-1 div-2 aside-2" 120px
-    "aside-1 div-3 section-2 section-2" 120px
+    "aside-1 div-1 div-2 aside-2" 170px
+    "aside-1 div-3 section-2 section-2" 170px
     / 180px 180px 180px 180px;
-    justify-content: center;
     gap: 15px;
-    padding: 30px 100px;
+    padding: 20px;
+    justify-content: center;
     background-color: var(--cinza-claro);
     box-shadow: 0 7px 8px 3px var(--cinza-escuro);
 }
 
 .cartao {
     border-radius: 5px;
+    text-align: start;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.aside-1 {
+    font-size: 26px;
+    grid-area: aside-1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aside-2 {
+    grid-area: aside-2;
+    gap: 30px;
+}
+
+.section-1 {    
+    grid-area: section-1;
+    color: var(--branco);
+    line-height: 31px;
+    font-size: 36px;
+    justify-content: center;
     text-align: center;
-    padding: 10px;
 }
 
-#aside-1 {
-    grid-area: 'aside-1';
+.section-2 {
+    grid-area: section-2;
+    flex-direction: row;
+    color: var(--branco);
+    letter-spacing: 0;
 }
 
-#aside-2 {
-    grid-area: 'aside-2';
+.div-1 {
+    grid-area: div-1;
+    justify-content: space-around;
+    line-height: 18px;
 }
 
-#section-1 {
-    grid-area: 'section-1';
+.div-2 {
+    grid-area: div-2;
+    justify-content: start;
+    line-height: 18px;
 }
 
-#section-2 {
-    grid-area: 'section-2';
+.div-3 {
+    letter-spacing: -1px;
+    grid-area: div-3;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    
 }
 
-#div-1 {
-    grid-area: 'div-1';
+.div-5 {
+    justify-content: space-between;
 }
 
-#div-2 {
-    grid-area: 'div-2';
-}
-
-#div-3 {
-    grid-area: 'div-3';
+.div-aside {
+    height: 100%;
 }
 
 .bege {
@@ -82,7 +129,55 @@ body {
     background-color: var(--branco);
 }
 
+.quicker {
+    color: var(--roxo);
+}
+
+.x10 {
+    color: var(--amarelo);
+}
+
+.over {
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-weight: 100;
+}
+
+.optimize {
+    letter-spacing: 0;
+    line-height: 14px;
+    font-size: 13px;
+    }
+
+.cinquenta-e-seis {
+    font-weight: 500;
+    align-self: flex-start;
+    font-size: 40px;
+}
+
+.criacao-de-postagem, .postagens-de-agendamento, .multiplas-plataformas {
+    width: 160px;
+}
+
+.cinco-estrelas {
+    margin-top: 20px;
+    width: 150px;
+}
+
+.agenda-constante, .conteudo-com-ia {
+    width: 140px;
+}
+
+.aumento-de-audiencia {
+    width: 120px;
+}
+
+.aumento-de-seguidores {
+    width: 150px;
+}
+
 .atribuicao {
+    letter-spacing: 0;
     font-size: 11px;
     text-align: center;
 }

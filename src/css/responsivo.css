@@ -1,3 +1,66 @@
-@media(max-width:400px) {
-    
+@media(max-width:900px) {
+    body {
+        padding: 0;
+        background-color: var(--cinza-claro);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .cartao {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .section-1 {
+        order: -3;
+    }
+
+    .div-1 {
+        order: -3;
+    }
+
+    .div-2 {
+        order: -3;
+    }
+
+    .aside-2 {
+        order: -2;
+    }
+
+    .section-2 {
+        order: -2;
+        flex-direction: column;
+    }
+
+    .div-3 {
+        order: -1;
+    }
+
+    .div-5 {
+        padding-bottom: 60px;
+    }
+
+    .optimize {
+        text-align: center;
+    }
+
+    .criacao-de-postagem, .postagens-de-agendamento, .agenda-constante, .aumento-de-audiencia, .aumento-de-seguidores {
+        width: 230px;
+    }
+
+    .conteudo-com-ia {
+        width: 190px;
+    }
+
+    .multiplas-plataformas {
+        width: 280px;
+    }
+
+    .cinquenta-e-seis {
+        align-self: center;
+    }
 }
