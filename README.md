@@ -30,7 +30,7 @@ Os usuários devem ser capazes de:
 
 ### Link
 
-- URL da solução: [Frontend Mentor | Bento Grid](https://shyayhs.github.io/frontend-mentor-bento-grid-main/)
+- URL da solução: [Frontend Mentor | Bento Grid](https://shyayhs.github.io/frontend-mentor-bento-grid/)
 
 ## Meu processo
 
